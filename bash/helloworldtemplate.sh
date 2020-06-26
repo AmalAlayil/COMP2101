@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# My second script - helloworldtemplated.sh
+# My second script - helloworldtemplated.sh .
 
 
 
