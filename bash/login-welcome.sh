@@ -18,16 +18,16 @@
 # Variables   #
 ###############
 
-#Removed title from this line
+#Remove title from the line
 myname=$USER
 hostname=$(hostname)
-#Replaced myname and hostname with $USER and $(hostname)
+#Replace myname & hostname with $USER and $(hostname)
 
 hours=$(date +%H)
 min=$(date +%M)
 meridian=$(date +%p)
 day=$(date +%A)
-#Created variables hours,min,meridian and day and assigned the values of time to it
+#Create variables hours,min,meridian and day then assign the values of time into it
 
 [ $day == "Monday" ] && title="Overlord"
 [ $day == "Tuesday" ] && title="Master"
@@ -37,7 +37,7 @@ day=$(date +%A)
 [ $day == "Saturday" ] && title="Batman"
 [ $day == "Sunday" ] && title="Nobody"
 
-#First tested what day it is and then assigned a title to each day of the week
+#First test what day it is and then assign a title to each day of the week
 
 
 ###############
@@ -47,7 +47,7 @@ day=$(date +%A)
 newMessage="Welcome to planet $hostname, $title $myname!
   It is $day at $hours:$min $meridian."
   
- #Assigned the output to a newly created variable 'newMessage' instead of displaying it directly.
+ #Assign the output to a new variable 'newMessage' instead of displaying it directly.
 
 cowsay $newMessage
 #Used the command cowsay to display the text inside newMessage. This makes the text display as if a cow is saying it.
