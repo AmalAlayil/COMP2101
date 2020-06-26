@@ -30,13 +30,13 @@
 
 
 
-# Tell the user we have started processing
+# Telling the user that we have started the process
 
 echo "Rolling..."
 
 
 
-#We assigned the number of sides and the minimum value of generated numbers to the variables range and bias respectively.
+#We have assigned number of sides and the min value of generated numbers to a variables range and bias respectively.
 
 range=6
 
@@ -44,17 +44,17 @@ bias=1
 
 
 
-# roll the dice and save the results
+# roll the dice and store the results
 
 die1=$(( RANDOM % $range + $bias ))
 
 die2=$(( RANDOM % $range + $bias ))
 
-#Replaced the numbers 6 and 1 with the variable we created
+#Replace the numbers 6 and 1 with variable that we created
 
 
 
-#We are creating a variable called sum to store the sum of the two dice Rolled
+#then create a variable called sum to store the sum of two dice Rolled
 
 sum=$(( die1 + die2 ))
 
