@@ -82,16 +82,16 @@ mylanHostname=$(getent hosts $(ip a s $(ip a |awk '/: e/{gsub(/:/,"");print $2}'
 externalIP=$(curl -s icanhazip.com)
 externalName=$(getent hosts $(curl -s icanhazip.com) | awk '{print $2}')
 
-#All the commands' outputs are put into different variables.
+#All the commands' outputs are stored into different variables.
 
 routeraddress=$(route -n|grep '^0.0.0.0' | awk '{print $2}')
 routername=$(getent hosts $routeraddress | awk '{print $2}')
 
-#Router address and name is assigned to two different variables. In the first command we ask routeraddress to only store the 2nd column of row with 0.0.0.0 as address.
-#In the second command we ask routername to store the name only of routeraddress and print the 2nd column.
+#Router address and name is assigned to two different variables. In the first command we asked router address to store the 2nd column of row with 0.0.0.0 as address.
+#In the second command we asked router name to store the name only of routeraddress and print the 2nd column.
 
 
-#All the output is dispalyed for the user using the created variables.
+#All the outputs are dispalyed for the user using the variables created.
 cat <<EOF
 Hostname        : $myhostname
 LAN Address     : $mylanAddress
