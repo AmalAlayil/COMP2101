@@ -9,5 +9,5 @@ echo -n "helb wold" |
   tr "w" "W"|
   awk '{print $1 "\x20" $2 "\41"}'
 bc <<< "(($$ * 4 - 24)/2 + 12)/2" |
-  sed 's/^/I am process # /'
+sed 's/^/I am process # /'
 
