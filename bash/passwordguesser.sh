@@ -11,7 +11,7 @@
 
 echo "Enter your password guess"
 read myString
-#We have asked the user to enter their guess and assigned the text to a variable called myString.
+#ask the user to enter their guess and assign the text to a variable called myString.
 
 referenceString="password"
 
@@ -20,7 +20,7 @@ referenceString="password"
 #else
 #  echo "Incorrect."
 #fi
-#This is the commands for TASK 2. FIrst we check if both the strings are same. If it is same we say its correct or we show the message Incorrect
+#This is the commands for the TASK 2. First we are checking if both the string are same. If same we say that it is correct or we show the message as Incorrect
 
 
 #TASK 3
@@ -48,4 +48,4 @@ else echo "The password you guessed is wrong. You have 4 more attempts." #This w
     fi
   fi
 fi
-#Since we used 5 if loops, we have to close them all with fi. So we close all of them one by one and with the final fi, we exit the loop completely.
+#Since we used 5 if loops, we have to close them all with fi. So we closed all of them one by one and with the final fi, we exit the loop completely.
