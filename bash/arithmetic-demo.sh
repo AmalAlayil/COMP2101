@@ -16,7 +16,7 @@ read firstnum
 read secondnum
 read thirdnum
 
-#Adding the 3 num and store the result into a variable called sum.
+#Adding the 3 num and store the result into a variable called sum
 sum=$((firstnum + secondnum + thirdnum))
 
 #Find the product of 3 numbers and storing the result into a variable called product
